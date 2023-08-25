@@ -1,10 +1,10 @@
 import { VscChromeClose } from "react-icons/vsc";
 import { useDispatch, useSelector } from "react-redux";
 import { OCModal } from "../redux/modalSlice";
-import { createData, updateData } from "../redux/dataSlice";
-import { ToastContainer, toast } from "react-toastify";
+import { createData } from "../redux/dataSlice";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Modal = () => {
   const dispatch = useDispatch();
@@ -93,18 +93,7 @@ const Modal = () => {
           </form>
         </div>
       )}
-      <ToastContainer
-        position="top-left"
-        autoClose={3500}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      
     </>
   );
 };

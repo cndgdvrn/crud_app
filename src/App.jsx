@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Modal from "./components/Modal";
 import UpdateModal from "./components/UpdateModal";
+import { ToastContainer } from "react-toastify";
 
 
 function App() {
@@ -15,6 +16,18 @@ function App() {
       <Header/>
       {type === "create" ? <Modal/> : type === "update" ? <UpdateModal/> : null}
       <MainContent/>
+      <ToastContainer
+        position="top-left"
+        autoClose={3500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 }

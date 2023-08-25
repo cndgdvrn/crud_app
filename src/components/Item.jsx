@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { deleteData } from "../redux/dataSlice";
 import { OCModal, changeType } from "../redux/modalSlice";
 import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Item = ({ contentItem }) => {
@@ -70,18 +70,7 @@ const Item = ({ contentItem }) => {
           </div>
         )}
       </div>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      
     </div>
   );
 };
