@@ -17,7 +17,7 @@ function App() {
       {type === "create" ? <Modal/> : type === "update" ? <UpdateModal/> : null}
       <MainContent/>
       <ToastContainer
-        position="top-left"
+        position="top-right"
         autoClose={3500}
         hideProgressBar={false}
         newestOnTop={false}
